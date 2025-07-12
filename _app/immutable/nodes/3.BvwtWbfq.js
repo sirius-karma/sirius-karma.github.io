@@ -1,0 +1,1 @@
+import"../chunks/CWj6FrbW.js";import"../chunks/tKdbv7Tm.js";import{P as r,Q as i}from"../chunks/N0EN57gU.js";/* empty css                */var p=r('<div class="events svelte-c0iynl"></div>');function s(o){var t=p();i(o,t)}export{s as component};
