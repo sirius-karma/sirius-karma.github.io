@@ -1,0 +1,100 @@
+
+.wrapper {
+    overflow-x: scroll;
+    position: relative;
+
+    white-space: nowrap;
+
+    margin: 1rem;
+}
+
+
+table {
+    border-collapse: collapse;
+    max-width: calc(100vw - 2rem);
+    margin: auto;
+}
+
+
+th {
+    font-weight: 500;
+
+    &.first, &.second {
+        @media screen and (min-width: 768px) {
+            position: sticky;
+        }
+        background: white;
+    }
+
+    &.first {
+        width: 13rem;
+        max-width: 13rem;
+        min-width: 13rem;
+        left: 0;
+    }
+
+    &.second {
+        width: 4rem;
+        left: 13rem;
+        padding-right: 1rem;
+    }
+
+    &.student {
+        text-align: start;
+    }
+}
+
+td .cell, th {
+    padding: 0.2rem 0.5rem;
+}
+
+.record, .zero {
+    width: 25.1833px
+}
+
+tr.project {
+    th {
+        padding-top: 1.75rem;
+    }
+
+    .name {
+        font-weight: 800;
+        font-size: 1.2rem;
+
+        &.small {
+            font-size: 1rem;
+        }
+    }
+
+    .stat {
+        font-weight: 800;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+td {
+    border-left: 1px solid #aaa;
+}
+
+td:nth-child(3),
+td:nth-child(11),
+td:nth-child(18) {
+    border-left: 3px solid #999;
+}
+
+td:nth-child(10),
+td:nth-child(17),
+td:nth-child(24) {
+    background: #ddd;
+}
+
+.current {
+    background: #d0ffcc !important;
+}
